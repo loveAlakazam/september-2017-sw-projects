@@ -1,0 +1,39 @@
+﻿<!doctype>
+<html>
+<head>
+<title>T.R.Y</title><!--192.168.4.1 -->
+<!-- 시간 나타내기-->
+<script type="text/javascript">
+var today=new Date();
+var strTime = "The current time is...<br>\n";
+strTime+= "Hour: "   + today.getHours()+"<br>\n";
+strTime+= "Minute: " + today.getMinutes()+"<br>\n";
+strTime+= "Second: " + today.getSeconds();
+document.write(strTime);
+setTimeout("location.reload()",6000)
+</script>
+
+<!--웹페이지 자동 갱신-->
+<script language="JavaScript">
+setTimeout("history.go(0);",5000);
+</script>
+</head>
+
+<body>
+<hr>
+<h3>[Result]</h3>
+<p>
+<ul>
+<li><b>CO<sub>2</sub></b>: (ZC01CV sensor Result)<br></li>
+<li><b>NH<sub>3</sub></b>: (TGS2602 sensor Result)<br></li>
+<li><b>Temperature</b>: (DHT-22 sensor Result)<br></li>
+<li><b>Humidity</b>: (DHT-22 sensor Result)<br></li>
+</ul>
+<hr>
+</p>
+
+
+</body>
+
+
+</html>
